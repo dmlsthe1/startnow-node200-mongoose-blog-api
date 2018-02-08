@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-mongoose.connect('mongodb://heroku_596sd756:bmrioa98oaduau5oh2ehpu04da@ds229468.mlab.com:29468/heroku_596sd756');
+var uri = process.env.MONGODB_URI || 'mongodb://heroku_596sd756:bmrioa98oaduau5oh2ehpu04da@ds229468.mlab.com:29468/heroku_596sd756';
+mongoose.connect(uri);
 
 mongoose.Promise = Promise;
 
