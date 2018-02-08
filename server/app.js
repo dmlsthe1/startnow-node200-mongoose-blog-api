@@ -19,7 +19,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-    res.status.apply(200).send();
+    res.status(200).send("Only /api/blogs or api/users is working right now");
 });
 
 app.use("/api/users", require("./routes/users"));
