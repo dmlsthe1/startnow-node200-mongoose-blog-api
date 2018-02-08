@@ -15,7 +15,7 @@ npm start
 Open the browser to the address shown in the console
 ```
 ```
-Navigate the webpage and enjoy
+Navigate to the endpoints and enjoy
 ```
 
 ## Contributing
